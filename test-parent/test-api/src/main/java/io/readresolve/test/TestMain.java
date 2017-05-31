@@ -13,5 +13,15 @@ public class TestMain {
 		// TODO Auto-generated method stub
 		System.out.println("Hello Git!");
 	}
+	
+	@SuppressWarnings("unused")
+	private static void doSomething() {
+		
+	}
+	
+	@SuppressWarnings("unused")
+	private static void doSomethingElse() {
+		
+	}
 
 }
