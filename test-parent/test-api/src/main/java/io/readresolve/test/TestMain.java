@@ -21,7 +21,7 @@ public class TestMain {
 	
 	@SuppressWarnings("unused")
 	private static void doSomethingElse() {
-		
+		System.out.println("Hello Feature 2!");
 	}
 
 }
