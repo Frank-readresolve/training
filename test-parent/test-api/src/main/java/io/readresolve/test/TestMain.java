@@ -16,7 +16,7 @@ public class TestMain {
 	
 	@SuppressWarnings("unused")
 	private static void doSomething() {
-		
+		System.out.println("Hello Feature 1!");
 	}
 	
 	@SuppressWarnings("unused")
