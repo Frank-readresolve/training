@@ -43,7 +43,6 @@
 				<sonar.projectName>Test</sonar.projectName>
 				<sonar.projectVersion>${project.version}</sonar.projectVersion>
 				<sonar.sources>src</sonar.sources>
-
 			</properties>
 		</profile>
 	</profiles>
