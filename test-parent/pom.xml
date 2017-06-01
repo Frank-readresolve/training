@@ -32,18 +32,4 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-<!-- 	<profiles> -->
-<!-- 		<profile> -->
-<!-- 			<id>sonar</id> -->
-<!-- 			<activation> -->
-<!-- 				<activeByDefault>true</activeByDefault> -->
-<!-- 			</activation> -->
-<!-- 			<properties> -->
-<!-- 				<sonar.projectKey>java-sonar-runner-test</sonar.projectKey> -->
-<!-- 				<sonar.projectName>Test</sonar.projectName> -->
-<!-- 				<sonar.projectVersion>${project.version}</sonar.projectVersion> -->
-<!-- 				<sonar.sources>src</sonar.sources> -->
-<!-- 			</properties> -->
-<!-- 		</profile> -->
-<!-- 	</profiles> -->
 </project>
