@@ -23,5 +23,10 @@ public class TestMain {
 	private static void doSomethingElse() {
 		System.out.println("Hello Feature 2!");
 	}
+	
+	@SuppressWarnings("unused")
+	private static void doSomethingBig() {
+		System.gc();
+	}
 
 }
