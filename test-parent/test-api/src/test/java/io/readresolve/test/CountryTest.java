@@ -10,5 +10,11 @@ public class CountryTest {
 	public void shouldNotConstruct() {
 		new Country(null);
 	}
-
+	
+	
+	@Test()
+	public void shouldConstruct() {
+		Country country = new Country("");
+		assertNotNull(country);
+	}
 }
