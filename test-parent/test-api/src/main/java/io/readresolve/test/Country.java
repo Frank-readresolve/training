@@ -27,6 +27,11 @@ public final class Country implements Serializable {
 		Country other = (Country) obj;
 		return code.equals(other.code);
 	}
+	
+	@Override
+	public int hashCode() {
+		return code.hashCode();
+	}
 
 	@Override
 	public String toString() {
