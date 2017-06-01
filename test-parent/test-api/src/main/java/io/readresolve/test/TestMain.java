@@ -25,7 +25,7 @@ public class TestMain {
 	
 	@SuppressWarnings("unused")
 	private static void doSomethingBig() {
-		System.gc();
+		// System.gc();
 	}
 
 }
