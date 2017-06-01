@@ -5,6 +5,10 @@ package io.readresolve.test;
  *
  */
 public class TestMain {
+	
+	private TestMain() {
+		//
+	}
 
 	/**
 	 * 
