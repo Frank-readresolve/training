@@ -74,7 +74,7 @@
 						<phase>site</phase>
 						<goals>
 							<goal>javadoc</goal>
-							<goal>aggregate</goal>
+							<goal>jar</goal>
 						</goals>
 					</execution>
 				</executions>
