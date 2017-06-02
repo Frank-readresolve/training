@@ -70,9 +70,10 @@
 				</configuration>
 				<executions>
 					<execution>
-						<id>aggregate</id>
+						<id>generate</id>
 						<phase>site</phase>
 						<goals>
+							<goal>javadoc</goal>
 							<goal>aggregate</goal>
 						</goals>
 					</execution>
