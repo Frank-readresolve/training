@@ -70,11 +70,10 @@
 				</configuration>
 				<executions>
 					<execution>
-						<id>generate</id>
-						<phase>site</phase>
+						<id>generate-javadoc</id>
+						<phase>pre-site</phase>
 						<goals>
 							<goal>javadoc</goal>
-							<goal>jar</goal>
 						</goals>
 					</execution>
 				</executions>
