@@ -29,8 +29,12 @@ public final class Country implements Serializable {
 	 *             if {@code code} is {@code null}
 	 */
 	public Country(String code) {
-		Objects.requireNonNull(code);
+		check(code);
 		this.code = code;
+	}
+	
+	private static void check(String code) {
+		Objects.requireNonNull(code);
 	}
 
 	/**
