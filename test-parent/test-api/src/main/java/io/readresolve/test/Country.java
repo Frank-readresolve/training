@@ -3,17 +3,41 @@ package io.readresolve.test;
 import java.io.Serializable;
 import java.util.Objects;
 
+/**
+ * Representsa country.
+ * 
+ * @author Frank MARSHALL
+ * @since 1.0
+ */
 public final class Country implements Serializable {
 
 	private static final long serialVersionUID = 8240881715822890568L;
-	
+
+	/**
+	 * The ISO code.
+	 * 
+	 * @serial the ISO code of the country.
+	 */
 	private final String code;
 
+	/**
+	 * Creates a new country with given ISO code.
+	 * 
+	 * @param code
+	 *            an ISO code
+	 * @throws NullPointerException
+	 *             if {@code code} is {@code null}
+	 */
 	public Country(String code) {
 		Objects.requireNonNull(code);
 		this.code = code;
 	}
 
+	/**
+	 * Returns the ISO code for this {@code country}.
+	 * 
+	 * @return the ISO code
+	 */
 	public String getCode() {
 		return code;
 	}
@@ -27,7 +51,7 @@ public final class Country implements Serializable {
 		Country other = (Country) obj;
 		return code.equals(other.code);
 	}
-	
+
 	@Override
 	public int hashCode() {
 		return code.hashCode();
