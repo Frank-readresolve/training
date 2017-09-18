@@ -6,4 +6,8 @@ public class MathUtil {
 		return x + y;
 	}
 	
+	public static int sum2(int x, int y) {
+		return x + y;
+	}
+	
 }
