@@ -10,6 +10,12 @@ public class UglyCompanyTest {
 		UglyCompany company = new UglyCompany("");
 		assertNotNull(company);
 	}
+	
+	@Test()
+	public void shouldConstructAslo() {
+		UglyCompany company = new UglyCompany();
+		assertNotNull(company);
+	}
 
 	@Test()
 	public void shouldReturnName() {
