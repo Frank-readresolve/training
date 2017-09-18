@@ -11,7 +11,7 @@ public class UglyCompany {
 	}
 
 	UglyCompany(String name) {
-		// TODO Auto-generated constructor stub
+		this.name = name;
 	}
 
 	public String getName() {
