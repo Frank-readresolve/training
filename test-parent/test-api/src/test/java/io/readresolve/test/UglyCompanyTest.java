@@ -16,6 +16,12 @@ public class UglyCompanyTest {
 		UglyCompany company = new UglyCompany();
 		assertNotNull(company);
 	}
+	
+	@Test(expected=NullPointerException.class)
+	public void shouldFail() {
+		UglyCompany company = new UglyCompany(null);
+		assertNotNull(company);
+	}
 
 	@Test()
 	public void shouldReturnName() {

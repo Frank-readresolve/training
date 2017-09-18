@@ -11,6 +11,9 @@ public class UglyCompany {
 	}
 
 	UglyCompany(String name) {
+		if(name==null) {
+			throw new NullPointerException();
+		}
 		this.name = name;
 	}
 
@@ -29,7 +32,4 @@ public class UglyCompany {
 		return name;
 	}
 
-	public static int sum(int x, int y) {
-		return x + y;
-	}
 }
