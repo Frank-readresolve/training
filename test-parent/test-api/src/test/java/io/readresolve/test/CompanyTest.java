@@ -4,28 +4,28 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class UglyCompanyTest {
+public class CompanyTest {
 	@Test()
 	public void shouldConstruct() {
-		UglyCompany company = new UglyCompany("");
+		Company company = new Company("");
 		assertNotNull(company);
 	}
 	
 	@Test()
 	public void shouldConstructAslo() {
-		UglyCompany company = new UglyCompany();
+		Company company = new Company();
 		assertNotNull(company);
 	}
 	
 	@Test(expected=NullPointerException.class)
 	public void shouldFail() {
-		UglyCompany company = new UglyCompany(null);
+		Company company = new Company(null);
 		assertNotNull(company);
 	}
 
 	@Test()
 	public void shouldReturnName() {
-		UglyCompany company = new UglyCompany("NAME");
+		Company company = new Company("NAME");
 		assertNotNull(company.toString());
 	}
 }
