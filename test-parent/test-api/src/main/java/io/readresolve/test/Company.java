@@ -29,8 +29,8 @@ public class Company {
 	return name;
     }
 
-    public void setName(String newName) {
-	newName = this.name;
+    public void setName(String Name) {
+	this.name = Name;
     }
 
     @Override
