@@ -12,6 +12,12 @@ import static org.junit.Assert.*;
 public class MathUtilTest {
 	
 	@Test
+	public void testConstructor() {
+		MathUtil math = null;
+		assertEquals(null,math);
+	}
+	
+	@Test
 	public void testGetVal() {
 		assertEquals(getVal(),5);
 	}
@@ -24,7 +30,17 @@ public class MathUtilTest {
 		int result = MathUtil.sum(x, y);
 		assertEquals(expResult, result);
 	}
+	
+	@Test
+	public void testMax() {
+		int x = 5;
+		int y = 4;
+		int expResult = 5;
+		int result = MathUtil.max(x, y);
+		assertEquals(expResult, result);
 
+	}
+	
 	@Test
 	public void testMaxOk() {
 		int x = 5;
@@ -44,12 +60,21 @@ public class MathUtilTest {
 		assertEquals(expResult, result);
 
 	}
-
+	
 	@Test
 	public void testMinOk() {
 		int x = 6;
 		int y = 4;
 		int expResult = 6;
+		int result = MathUtil.min(x, y);
+		assertEquals(expResult, result);
+	}
+	
+	@Test
+	public void testMin() {
+		int x = 3;
+		int y = 4;
+		int expResult = 4;
 		int result = MathUtil.min(x, y);
 		assertEquals(expResult, result);
 	}
