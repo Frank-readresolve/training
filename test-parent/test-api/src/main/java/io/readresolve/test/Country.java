@@ -2,6 +2,7 @@ package io.readresolve.test;
 
 import java.io.Serializable;
 import java.util.Objects;
+import java.util.Date;
 
 /**
  * Represents a country.
@@ -14,55 +15,78 @@ public final class Country implements Serializable {
     private static final long serialVersionUID = 8240881715822890568L;
 
     /**
-     * The ISO code.
+     * The ISO Code.
      * 
-     * @serial the ISO code of the country.
+     * @serial the ISO Code of the country.
      */
-    private final String code;
+    public String Code;
+    public int pasUtilise;
+    
+    public void Calculmethode() {
+        /* commentaire 1
+        commentaire 2 */
+    }
+    
+    //
 
     /**
-     * Creates a new country with given ISO code.
+     * Creates a new country with given ISO Code.
      * 
-     * @param code
-     *        an ISO code
      * @throws NullPointerException
-     *         if {@code code} is {@code null}
+     *         if {@code Code} is {@code null}
      */
     public Country(String code) {
 	check(code);
-	this.code = code;
+	code = this.Code;
     }
 
-    private static void check(String code) {
+    public static void check(String code) {
+//        System.out.println("commentaire");
 	Objects.requireNonNull(code);
     }
 
     /**
-     * Returns the ISO code for this {@code country}.
+     * Returns the ISO Code for this {@code country}.
      * 
-     * @return the ISO code
+     * @return the ISO Code
      */
     public String getCode() {
-	return code;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	return Code;
     }
 
     @Override
     public boolean equals(Object obj) {
 	if (this == obj)
 	    return true;
+        
+        
+        
+        
+        
+        
+        
 	if (!(obj instanceof Country))
-	    return false;
+                                            return false;
 	Country other = (Country) obj;
-	return code.equals(other.code);
+	return Code.equals(other.Code);
     }
 
     @Override
     public int hashCode() {
-	return code.hashCode();
+	return Code.hashCode();
     }
 
-    @Override
+    
     public String toString() {
-	return code;
+	return Code;
     }
 }
