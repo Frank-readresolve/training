@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 public class MathUtilTest {
 	
 	@Test
-	public void testConstructor() {
+	public void testMathUtil() {
 		MathUtil math = null;
 		assertEquals(null,math);
 	}
@@ -93,6 +93,13 @@ public class MathUtilTest {
 		int other = 6;
 		boolean result = MathUtil.isGreater(other);
 		assertTrue(result);
+	}
+	
+	@Test
+	public void testIsGreater() {
+		int other = 2;
+		boolean result = MathUtil.isGreater(other);
+		assertFalse(result);
 	}
 	
 	@Test (expected = AssertionError.class)
