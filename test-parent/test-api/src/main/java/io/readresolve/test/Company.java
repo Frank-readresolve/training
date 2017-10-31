@@ -1,10 +1,15 @@
 package io.readresolve.test;
 
+import java.util.Objects;
+import java.io.Serializable;
+import java.util.ArrayList;
+
+
 public class Company {
 
-    public String name = null;
-
-    private Country country;
+    private String name = null;
+    
+    private final String jesuisinutile = "Oulala";
 
     public Company() {
 	// TODO Auto-generated constructor stub
@@ -16,14 +21,15 @@ public class Company {
 	}
 	this.name = name;
     }
+    
+    //PraiseTheSun
 
     public String getName() {
-	// System.out.println(name);
 	return name;
     }
 
-    public void setName(String name) {
-	name = this.name;
+    public void setName(String newName) {
+	newName = this.name;
     }
 
     @Override
@@ -35,6 +41,15 @@ public class Company {
 	Company other = (Company) obj;
 	return name.equals(other.name);
     }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 53 * hash + Objects.hashCode(this.name);
+        return hash;
+    }
+    
+    
 
     /**
      * Returns the name of the company.
