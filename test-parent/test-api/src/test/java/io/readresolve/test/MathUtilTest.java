@@ -26,7 +26,7 @@ public class MathUtilTest {
 	}
 
 	@Test
-	public void testMax() {
+	public void testMaxOk() {
 		int x = 5;
 		int y = 7;
 		int expResult = 7;
@@ -34,21 +34,47 @@ public class MathUtilTest {
 		assertEquals(expResult, result);
 
 	}
+	
+	@Test (expected = AssertionError.class)
+	public void testMaxFail() {
+		int x = 5;
+		int y = 7;
+		int expResult = 5;
+		int result = MathUtil.max(x, y);
+		assertEquals(expResult, result);
+
+	}
 
 	@Test
-	public void testMin() {
+	public void testMinOk() {
 		int x = 6;
 		int y = 4;
 		int expResult = 6;
 		int result = MathUtil.min(x, y);
 		assertEquals(expResult, result);
 	}
+	
+	@Test (expected = AssertionError.class)
+	public void testMinFail() {
+		int x = 6;
+		int y = 4;
+		int expResult = 4;
+		int result = MathUtil.min(x, y);
+		assertEquals(expResult, result);
+	}
 
 	@Test
-	public void testIsGreater() {
+	public void testIsGreaterOk() {
 		int other = 6;
 		boolean result = MathUtil.isGreater(other);
 		assertTrue(result);
+	}
+	
+	@Test (expected = AssertionError.class)
+	public void testIsGreaterFail() {
+		int other = 6;
+		boolean result = MathUtil.isGreater(other);
+		assertFalse(result);
 	}
 	
 }
