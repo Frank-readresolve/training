@@ -8,9 +8,6 @@ import java.util.ArrayList;
 public class Company {
 
     private String name = null;
-    
-    private final String jesuisinutile = "Oulala";
-     private final String jesuisAUSSIinutile = "Oulala";
 
     public Company() {
 	// TODO Auto-generated constructor stub
