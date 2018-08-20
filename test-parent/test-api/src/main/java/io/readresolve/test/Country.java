@@ -20,7 +20,6 @@ public final class Country implements Serializable {
      * @serial the ISO Code of the country.
      */
     public String Code;
-    public int pasUtilise;
     
     public void Calculmethode() {
         /* commentaire 1
